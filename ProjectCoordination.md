@@ -1,9 +1,10 @@
 ###Project description:
 ---
-The PDX Pyladies group has been accumulating 
-We need a simple web app to keep track of our distributed PDX Pyladies library. It would be hard to coordinate a central location to keep all of these books, so we can instead keep track of which Pylady has each book. Eventually we'd also like to be able to email pyladies through the app and allow each person to confirm the handoff
+The PDX Pyladies group has been accumulating reference books which are useful in the process of learning and perfecting our Python skills.
 
-To start off this will be a django app hosted on heroku
+We need a simple web app to keep track of our distributed PDX Pyladies library. It would be hard to coordinate a central location to keep all of these books, so we can instead keep track of which Pylady has each book. Eventually we'd also like to be able to email pyladies through the app and allow each person to confirm the handoff.
+
+To start off, this will be a django app hosted on heroku.
 
 ---
 ###How to contribute:
