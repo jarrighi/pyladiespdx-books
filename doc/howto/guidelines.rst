@@ -23,3 +23,8 @@ If you have any questions about how or where to add documentation, please contac
 Testing
 -------
 If you add a feature, it must include a test.
+
+
+Code Review
+-----------
+Perform a code review on your code, we can help you with this at meetings.

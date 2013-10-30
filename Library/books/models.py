@@ -2,6 +2,7 @@ from django.db import models
 from django.utils import timezone
 
 class Book(models.Model):
+  "Represents a book in the system"
   title = models.CharField(max_length=256)
   slug = models.SlugField(max_length=256, default=timezone.now)
   authors = models.CharField(max_length=256)

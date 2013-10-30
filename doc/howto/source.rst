@@ -15,7 +15,7 @@ get the other stuff in the requirents.txt doc
 
 Forking the Repo
 ----------------
-On the Github `page <https://github.com/jarrighi/pyladiespdx-books>`_ for the project, fork the repo to your account by clicking the fork button at the top right of the page. This will create a personal copy of the project for you on your account.
+On the `GitHub page <https://github.com/jarrighi/pyladiespdx-books>`_ for the project, fork the repo to your account by clicking the fork button at the top right of the page. This will create a personal copy of the project for you on your account.
 
 Now, to get the code onto your local machine, open a terminal. Copy the repo url from your own fork. It should be of the form `https://github.com/your_username/pyladiespdx-books.git`. ``cd`` to wherever you want to download the code to. Now run:
 

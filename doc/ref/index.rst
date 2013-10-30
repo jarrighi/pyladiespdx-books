@@ -2,7 +2,13 @@
 Source Reference API
 ====================
 
-.. toctree::
-   :maxdepth: 1
-
 classes and whatnot
+
+.. toctree::
+   :maxdepth: 2
+
+   modules.rst
+
+
+.. automodule:: Library.books.models
+   :members:
