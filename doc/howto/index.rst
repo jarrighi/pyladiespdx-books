@@ -3,8 +3,9 @@ How to contribute
 *****************
 
 .. toctree::
-   :maxdepth: 1
-
+   :maxdepth: 2
+   
+   outline.rst
    source.rst
    guidelines.rst
    issues.rst
