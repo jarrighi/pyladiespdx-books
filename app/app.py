@@ -14,7 +14,18 @@ def index():
 
 @app.route('/books')
 def get_books():
-    return "this is where a book live!"
+    the_books = Book.query.all()
+    book_titles = []
+    for book in the_books:
+      book_info = "{} by {}".format(book.title, book.author)
+      book_titles.append(book_info)
+    # Need to figure out new lines... or just make a template
+    stringy_books = "<br><br>".join(book_titles)
+    return """this is where a book live!<br><br>
+
+    {}
+
+    """.format(stringy_books)
 
 
 
