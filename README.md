@@ -1,25 +1,47 @@
-pyladiespdx-books
-=================
+README.md
+======
 
-This is app to coordinate access to various books that have been donated to the PDX Pyladies. Because we don't have a central location, we'll keep a list here of the books we have, who currently has them, and how to get in touch with them.
+LibrarPy is a project to begin a working library amongst Portland PyLadies.  We have
+been given a number of technical manuals and other books and have structured a way
+for these books to be safely lent out and tracked so that all may benefit.
 
-Perhaps in the future we can also add in book request process or host some electronic resources as well.
+We would like to break this project into first several smaller sub-components,
+then break those into several more, and so forth, in order to make the project
+approachable for group members who would like to lend their support (or potentially
+first FOSS contribution!) to this future web app.
 
-This is a work in progress. For instructions on how to contribute see ProjectCoordination.md
+====
 
-###Agreement:
+DRAFT: What our product does.
 
-By participating in the distributed library, a PyLady aggrees to some things, but I don't know what these are yet. 
+Structure
+- Hosted on Heroku FTTB
+- Dev environment process & creation
+- Flask python web framework
+- Postgres DB
+- bootstrap/skeleton css framework
 
-Perhaps:
+Components
+- Book Model
+- User Model
+- Pages: sign-up, sign-in, log out, book list, book detail per entry (with request),
+profile, about Library ... (PyBrary?)
+- static folder of css/JS/images.
+- Tests
 
-* will pass the book to someone else if she will be unavailable for more than a week (or some other time period)
-* will respond to a request within a week
+Features
+- Who has a book right now?
+- What books are available/checked out?
+- How many books are "checked out"?
+- Granular user data: how long has a given user had a book checked out & its info
+- Checkout process
+- External user creation
+- login/auth
+- User-designated availability
+- Availability "switch" after (x) weeks (or notification)
+ - this is a bigger problem :)
+ - simplification (for now): "who has the book?  rachel.  go bug her.  BYE"
 
-###How to use this:
-
-To start with this will just be a list of the books we have, who has them and how to get in touch with them. 
 
 
-
-
+last (re)-created 12/29/2014
