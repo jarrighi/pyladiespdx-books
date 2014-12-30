@@ -5,3 +5,5 @@ local_settings.py
 v-lib-env/
 .DS_Store
 doc/_build
+env
+.gitignore
