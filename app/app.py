@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, url_for
 from flask.ext.sqlalchemy import SQLAlchemy
 import os
 
@@ -10,7 +10,7 @@ db = SQLAlchemy(app)
 @app.route('/')
 @app.route('/index')
 def index():
-    return "testy print statement wow"
+    return render_template('index.html')
 
 @app.route('/books')
 def get_books():
