@@ -1,10 +1,15 @@
-Next Steps as of 12/29/2014, pick ONE:
+Next Steps as of 02/16/2015:
+
+- Debug runerror file
 
 - Postgres DB creation
   - models, methods, views, (python)
+    - (X) peeled out the first models.py, views.py, removed app.py
   - what data is going into the templates
 
-- Heroku setup
+- Heroku setup - fiddle with debugging for app
+
+
 - Templates (pages OR base/global, in html/jinja)
   - (X) skeleton imported
   - (X) index.html base.html structured
