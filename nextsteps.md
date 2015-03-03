@@ -5,6 +5,7 @@ Next Steps as of 02/16/2015:
 - Postgres DB creation
   - models, methods, views, (python)
     - (X) peeled out the first models.py, views.py, removed app.py
+  - 'from_object' thing in __init__.py
   - what data is going into the templates
 
 - Heroku setup - fiddle with debugging for app
@@ -19,3 +20,4 @@ Next Steps as of 02/16/2015:
   - Style
     - Images, text content, page layout design, color
     -   - ideally this can be given to someone who would like to help
+

@@ -1,5 +1,6 @@
 from app import app
 from flask import render_template
+from models import Book
 
 @app.route('/')
 @app.route('/index')
@@ -12,11 +13,5 @@ def get_books():
     book_titles = []
     for book in the_books:
       book_info = "{} by {}".format(book.title, book.author)
-      book_titles.append(book_info)
-    # Need to figure out new lines... or just make a template
-    stringy_books = "<br><br>".join(book_titles)
-    return """this is where a book live!<br><br>
-
-    {}
-
-    """.format(stringy_books)
+      book_titles.append(book_info) 
+    return render_template('books.html', books=book_titles)
