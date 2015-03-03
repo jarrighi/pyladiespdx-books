@@ -7,6 +7,7 @@ Next Steps as of 02/16/2015:
     - (X) peeled out the first models.py, views.py, removed app.py
   - 'from_object' thing in __init__.py
   - what data is going into the templates
+  - debug why titles aren't getting printed in the books template, only object identifiers
 
 - Heroku setup - fiddle with debugging for app
 
