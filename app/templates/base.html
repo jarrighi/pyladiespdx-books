@@ -2,6 +2,12 @@
 <html lang="en">
 <head>
 
+  <!-- What is base.html? 
+	Things that are the same on every page should go in this base file. 
+	This includes things like a nav bav, the footer, etc. 
+	The contents of a page should inherit from this page and be in a separate html file. 
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
@@ -29,18 +35,15 @@
 </head>
 <body>
 
-  <!-- Content Block
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  {% block content %}
-  {% endblock %}
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container">
     <div class="row">
       <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+	  <!-- Content Block
+	  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+ 	  {% block content %}
+  	  {% endblock %}
       </div>
     </div>
   </div>
@@ -49,4 +52,3 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 </body>
 </html>
-

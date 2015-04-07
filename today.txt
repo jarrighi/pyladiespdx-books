@@ -1,0 +1,27 @@
+Setup virtualenv
+Install Flask
+
+Create Flask app 
+  __init__.py
+  static (css > skeleton)
+  templates (base.html, books.html)
+  models.py (empty for now)
+  view.py (render the books page)
+  run.py 
+
+Make it work on heroku
+  create proc file
+  set env vars?
+
+Get DB stuff going
+  Install Flask-Migrate, Flask-SQLAlchemy, Flask-Script, SQLAlchemy, psycopg2
+  Create a manage script
+  Add db stuff to __init__py
+  Create models
+  Create migration + migrate
+    python manage.py db migrate
+    python manage.py db upgrade
+
+Get working on heroku again
+
+move config to config file?
