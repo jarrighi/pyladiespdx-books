@@ -18,7 +18,8 @@ Get DB stuff going
   Create a manage script
   Add db stuff to __init__py
   Create models
-  Create migration + migrate
+  Create migration + migrate    
+    python manage.py db init
     python manage.py db migrate
     python manage.py db upgrade
 
