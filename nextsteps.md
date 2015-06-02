@@ -32,3 +32,11 @@
 [] move config to config file?
 
 [] work on book detail page
+
+[] Document existing code
+
+[] document environment setup
+
+[] describe a few tasks to be done
+
+[] Check in with Amy about what to do with docs
