@@ -1,12 +1,16 @@
-from app import app
+from app import app, db, models
 from flask import render_template
 
 @app.route('/')
 def get_books():
-    books = [{"title": "Book", "author": "Person"}, 
-             {"title": "Book", "author": "Person"},
-             {"title": "Book", "author": "Person"},
-             {"title": "Book", "author": "Person"}]
+    books = []
+
+    query = db.session.query(models.Book)
+    for book in query:
+        book_dict = {}
+        book_dict["title"] = book.title
+        book_dict["author"] = book.author
+        books.append(book_dict)
     return render_template('books.html', books=books)
 
 @app.route('/books/<book>')

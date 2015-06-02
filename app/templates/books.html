@@ -1,11 +1,6 @@
 {% extends 'base.html' %}
 {% block content %}
 <h1> BBBBBOOOOOOOKKKKKSSSS!!!! </h1>
-<p> one book </p>
-<p> two book </p>
-<p> red book </p>
-<p> blue book </p>
-
 <ul>
 {% for book in books %}
   <li>{{ book.title }} -- by {{ book.author }}</li>
