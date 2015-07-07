@@ -15,9 +15,9 @@ def get_books():
 
 @app.route('/books/<book>')
 def book_page(book):
-    
+
     # The following data should eventually get passed into the page
-    # 
+    #
     # Title and Author of the book
     # Who has the book
     # Links to information about the book
@@ -27,3 +27,7 @@ def book_page(book):
     book_details = {'title': 'python book', 'author': 'pythonista', 
                     'possessor': 'pyltergeist'}
     return render_template('book_detail.html', details=book_details)
+
+@app.route('/books/new')
+def new_book():
+    return render_template('add_book.html')
