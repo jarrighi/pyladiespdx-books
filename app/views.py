@@ -1,5 +1,5 @@
 from app import app, db, models
-from flask import render_template
+from flask import render_template, redirect, url_for, request
 
 @app.route('/')
 def get_books():
@@ -31,3 +31,13 @@ def book_page(book):
 @app.route('/books/new')
 def new_book():
     return render_template('add_book.html')
+
+@app.route('/books/add', methods=["POST"])
+def add_book():
+    title = request.form['title']
+    author = request.form['author']
+    possessor = request.form['possessor']
+    book = models.Book(title, author)
+    db.session.add(book)
+    db.session.commit()
+    return redirect(url_for('get_books'))
