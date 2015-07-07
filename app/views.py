@@ -17,6 +17,8 @@ def get_books():
 @app.route('/books/<book>')
 def book_page(book):
 
+    the_book = models.Book.query.get(book)
+
     # The following data should eventually get passed into the page
     #
     # Title and Author of the book
@@ -25,7 +27,7 @@ def book_page(book):
     # tags that describe the book
     # butts
     # button to request the book
-    book_details = {'title': 'python book', 'author': 'pythonista', 
+    book_details = {'title': the_book.title, 'author': the_book.author, 
                     'possessor': 'pyltergeist'}
     return render_template('book_detail.html', details=book_details)
 
