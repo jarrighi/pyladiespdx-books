@@ -3,8 +3,10 @@
 <h1> BBBBBOOOOOOOKKKKKSSSS!!!! </h1>
 <ul>
 {% for book in books %}
-  <li>{{ book.title }} -- by {{ book.author }}</li>
+  <li><a href="/books/{{ book.id }}">{{ book.title }} -- by {{ book.author }}</a></li>
 {% endfor %}
 </ul>
+
+<a href="/books/new">Add a book</a>
 
 {% endblock %}

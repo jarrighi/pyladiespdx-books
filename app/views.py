@@ -10,6 +10,7 @@ def get_books():
         book_dict = {}
         book_dict["title"] = book.title
         book_dict["author"] = book.author
+        book_dict["id"] = book.id
         books.append(book_dict)
     return render_template('books.html', books=books)
 
@@ -37,7 +38,9 @@ def add_book():
     title = request.form['title']
     author = request.form['author']
     possessor = request.form['possessor']
+
     book = models.Book(title, author)
     db.session.add(book)
     db.session.commit()
+
     return redirect(url_for('get_books'))
