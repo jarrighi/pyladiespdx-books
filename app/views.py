@@ -28,7 +28,7 @@ def book_page(book):
     # butts
     # button to request the book
     book_details = {'title': the_book.title, 'author': the_book.author, 
-                    'possessor': 'pyltergeist'}
+                    'possessor': the_book.possessor}
     return render_template('book_detail.html', details=book_details)
 
 @app.route('/books/new')
@@ -41,7 +41,7 @@ def add_book():
     author = request.form['author']
     possessor = request.form['possessor']
 
-    book = models.Book(title, author)
+    book = models.Book(title, author, possessor)
     db.session.add(book)
     db.session.commit()
 
