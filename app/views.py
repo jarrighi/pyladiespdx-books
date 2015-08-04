@@ -46,3 +46,6 @@ def add_book():
     db.session.commit()
 
     return redirect(url_for('get_books'))
+
+# to add users, unauthenticated
+#
