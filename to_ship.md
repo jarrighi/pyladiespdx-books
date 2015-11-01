@@ -8,11 +8,15 @@ views begun
 stylesheet
 
 ##### MVP:
-Capacity to add new books - genuine connection to DB
-Users can log in
-HTML-capable, DB-drawn list of books & possessor
+x - Capacity to add new books - genuine connection to DB
+x - HTML-capable, DB-drawn list of books
+Users can log in 
+List of books by owner/possessor
 User can request a book [~saaailing~]
-Transfer ownership of book
+Transfer ownership of book - both people verify
+Set up email alerts for books requests
+Set up email reminders at two weeks
+List of rules for the app
 
 ##### easy stuff to do:
  - HTML templates
